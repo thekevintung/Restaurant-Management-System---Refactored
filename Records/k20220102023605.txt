@@ -1,0 +1,11 @@
+Table 1
+Order time: 02:36:05 AM
+Order Details for Table 1 : 
+
+Sweet Lassi	1
+Mango Banana Lassi	1
+Fruit Lassi	1
+Dry fruit lassi	1
+
+
+***** Order closed for 20220102023605 *******

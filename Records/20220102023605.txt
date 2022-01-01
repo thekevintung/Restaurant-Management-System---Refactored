@@ -1,0 +1,24 @@
+                  The Lassi Corner 
+                      K.K.Nagar 
+                  Ph: 9852415687 
+                  Staffname: Kevin  
+            Date/Time: 02,Jan,2022 / 02:36:05 AM
+            Bill Number: 20220102023605
+                     Table 1
+Order time: 02:36:05 AM
+Order Details for Table 1 : 
+
+=======================================================================
+  Product			 Price		 QTY 	 Total
+=======================================================================
+Sweet Lassi			 40		 1 	 40
+Mango Banana Lassi			 50		 1 	 50
+Fruit Lassi			 55		 1 	 55
+Dry fruit lassi			 60		 1 	 60
+=======================================================================
+
+        Total Amount = 205 + 5% GST(10.25)
+
+                Total Amount= 215.25
+
+               Thank You! Visit Again!!

@@ -1,0 +1,36 @@
+                  The Lassi Corner 
+                      K.K.Nagar 
+                  Ph: 9852415687 
+                  Staffname: Kevin  
+            Date/Time: 02,Jan,2022 / 02:37:22 AM
+            Bill Number: 20220102023722
+                     Table 1
+Order time: 02:37:22 AM
+Order Details for Table 1 : 
+
+=======================================================================
+  Product			 Price		 QTY 	 Total
+=======================================================================
+Sweet Lassi			 40		 1 	 40
+Mango Banana Lassi			 50		 1 	 50
+Fruit Lassi			 55		 1 	 55
+Dry fruit lassi			 60		 1 	 60
+Mango Lassi			 45		 1 	 45
+Mud coffee			 70		 1 	 70
+Belgian coffee			 75		 1 	 75
+Ferrero coffee			 90		 1 	 90
+Mexican brownie			 60		 1 	 60
+Chocolate fudge			 65		 1 	 65
+Lava cake			 90		 1 	 90
+Dryfruit sundae			 110		 1 	 110
+Nutella Lychees			 100		 1 	 100
+Butter Scotch fudge			 95		 1 	 95
+Choco nut sundae			 105		 1 	 105
+Turkish Coffee			 50		 1 	 50
+=======================================================================
+
+        Total Amount = 1160 + 5% GST(58.0)
+
+                Total Amount= 1218.0
+
+               Thank You! Visit Again!!

@@ -1,0 +1,13 @@
+                  The Lassi Corner 
+                      K.K.Nagar 
+                  Ph: 9852415687 
+                  Staffname: Kevin  
+            Date/Time: 02,Jan,2022 / 02:31:07 AM
+            Bill Number: 20220102023107
+                     Table 1
+Order time: 02:31:07 AM
+Order Details for Table 1 : 
+
+=======================================================================
+  Product			 Price		 QTY 	 Total
+=======================================================================
