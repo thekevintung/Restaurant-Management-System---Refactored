@@ -22,9 +22,9 @@ class MenuWindow(WindowBase):
         self._setup_observers()
         
     def _setup_ui(self):
-        self.window.title('Select Tables / Takeaway')
+        self.window.title(self.table)
         self.window.config(bg='deep sky blue')
-        self.width, self.height = self.auto_set_window_geometry(scale=0.9)
+        self.auto_set_window_geometry(scale=0.9)
 
         self.__customer_info = tk.LabelFrame(self.window, text='Customer Details', font=('times new rommon', 18), bg='steel blue')
         self.__customer_name = CustomerInfoWidget(self.__customer_info, discription='Customer Name', default='Walk in Customer')
@@ -196,18 +196,18 @@ class Menu(tk.Frame):
         self.split_columns = 2
 
         try:
-            self.menu_items = self.create_product_items(self.PRODUCTS)
-            self.add_items_into_menu(self.menu_items)
+            self.menu_items = self.__create_product_items(self.PRODUCTS)
+            self.__add_items_into_menu(self.menu_items)
         except Exception as e:
             print(e)
 
-    def create_product_items(self, products:dict=None):
+    def __create_product_items(self, products:dict=None):
         product_items = []
         for name, price in products.items():
             product_items.append(ProductWidget(self, name=name, price=price))
         return product_items
 
-    def add_items_into_menu(self, items:list=None):
+    def __add_items_into_menu(self, items:list=None):
         rows = int(np.ceil(len(items)/self.split_columns))
         columns = self.split_columns
 
@@ -236,7 +236,8 @@ class ProductWidget(tk.Frame):
     
         self.chkValue = tk.BooleanVar(self)
         self.chkValue.set(False)
-        self.check_button = tk.Checkbutton(self, text=name, variable=self.chkValue, onvalue=40, height=2, width=20)
+        self.check_button = tk.Checkbutton(self, text=name, variable=self.chkValue, 
+                                           onvalue=40, height=2, width=20)
         self.check_button.pack(side=tk.LEFT, expand=True, padx=5, pady=5)
 
         self.quantity = tk.IntVar(self, value=0)

@@ -1,0 +1,7 @@
+Table 1
+Order time: 04:45:52 PM
+Order Details for Table 1 : 
+
+
+
+***** Order closed for 20220102044552 *******

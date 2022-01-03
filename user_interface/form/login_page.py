@@ -4,7 +4,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from user_interface.form.base import WindowBase
-from user_interface.form.order_page import OrderWindow
+from user_interface.form.order_page import OrderingWindow
 from utils.mySQL import MySQLProcessor
 
 class LoginWindow(WindowBase):
@@ -13,7 +13,6 @@ class LoginWindow(WindowBase):
 
         self._setup_ui()
         self._setup_mySQL(database="restaurant", table="staff")
-        self.logged_user = None
         
     @property
     def mySQL_processor(self):
@@ -22,7 +21,7 @@ class LoginWindow(WindowBase):
     def _setup_ui(self):
         self.window.title('Login Page')
         self.window.config(bg='black')
-        self.width, self.height = self.auto_set_window_geometry(scale=0.5)
+        self.auto_set_window_geometry(scale=0.5)
 
         self.__username_label = tk.Label(self.window, text='Username', font='arial 18', bg='black', fg='white')
         self.__username_label.place(x=240, y=165)
@@ -67,5 +66,5 @@ class LoginWindow(WindowBase):
         return True
 
     def __open_order_window(self):
-        order_window = OrderWindow(self.logged_user)
+        order_window = OrderingWindow(self.logged_user)
         order_window.window.mainloop()

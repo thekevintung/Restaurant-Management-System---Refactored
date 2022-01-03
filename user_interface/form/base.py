@@ -21,17 +21,16 @@ class WindowBase(metaclass=abc.ABCMeta):
         screen_width = self.window.winfo_screenwidth()
         screen_height = self.window.winfo_screenheight()
 
-        window_width = int(screen_width*scale)
-        window_height = int(screen_height*scale)
+        self.width = int(screen_width*scale)
+        self.height = int(screen_height*scale)
 
-        x = int((screen_width/2) - (window_width/2))
-        y = int((screen_height/2) - (window_height/2))
+        x = int((screen_width/2) - (self.width/2))
+        y = int((screen_height/2) - (self.height/2))
 
-        self.window.geometry("{}x{}+{}+{}".format(window_width, window_height, x, y))
+        self.window.geometry("{}x{}+{}+{}".format(self.width, self.height, x, y))
         self.window.resizable(width=0, height=0)
-        return window_width, window_height
 
-    def get_widget_size(self, widget:tk.Tk=None):
+    def get_size(self, widget:tk.Tk=None):
         self.window.update()
         return widget.winfo_width(), widget.winfo_height()
 

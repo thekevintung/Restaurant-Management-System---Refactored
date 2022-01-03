@@ -55,7 +55,7 @@ class KitchenOrderRecoder(ConcreteOrderRecoder):
 class MenuTerminalRecoder(ConcreteOrderRecoder):
     def __init__(self, terminal=None, **kwargs) -> None:
         super().__init__(**kwargs)
-        self.terminal = terminal
+        self.__terminal = terminal
         self.header_info =  f'Bill Number: {self.number}'\
                             f'\n Customer Name:\t\t{self.customer}' \
                             f'\n Phone Number:\t\t{self.customer_phone_number}' \
@@ -67,10 +67,10 @@ class MenuTerminalRecoder(ConcreteOrderRecoder):
     def update(self, order_info:dict=None):
         update_record = f'\n{order_info["item"]}\t\t\t{order_info["price"]}\t\t{order_info["quantity"]}\t{order_info["cost"]}'
 
-        if not self.terminal.search_content('Bill Number'):
+        if not self.__terminal.search_content('Bill Number'):
             update_record = self.header_info  + '\n' + update_record
 
-        self.terminal.print(update_record)
+        self.__terminal.print(update_record)
         
     def finish_record(self):
         pass

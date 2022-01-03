@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 from  user_interface.form.base import WindowBase
 from user_interface.form.menu_page import MenuWindow
 
-class OrderWindow(WindowBase):
+class OrderingWindow(WindowBase):
     def __init__(self, logged_user:str=None) -> None:
         super().__init__()
 
@@ -17,7 +17,7 @@ class OrderWindow(WindowBase):
     def _setup_ui(self):
         self.window.title('Select Tables / Takeaway')
         self.window.config(bg='deep sky blue')
-        self.width, self.height = self.auto_set_window_geometry(scale=0.9)
+        self.auto_set_window_geometry(scale=0.9)
         self.__setup_scenes(image="./user_interface/media/tableselect.jpg")
 
         self.__logged_user_label = tk.Label(self.window, text='Logged in as ' + self.logged_user, font='bold')
@@ -86,12 +86,12 @@ class DiningTable(tk.Button):
         self.config(bg='black')
         self.configure(state=tk.DISABLED)
 
-        self.menu_panel = MenuWindow(table=self.name, orderer=self.orderer)
-        self.menu_panel.window.mainloop()
+        self.__menu_panel = MenuWindow(table=self.name, orderer=self.orderer)
+        self.__menu_panel.window.mainloop()
 
         self.config(bg='yellow')
         self.configure(state=tk.NORMAL)
 
     def __double_click(self, event):
-        self.menu_panel.window.deiconify()
+        self.__menu_panel.window.deiconify()
         
