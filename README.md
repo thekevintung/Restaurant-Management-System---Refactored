@@ -1,5 +1,5 @@
 # Restaurant-Management-System Refactored
-This project is the refactored of the "Restaurant Management System" that was clone from https://github.com/nkeyan11/Restaurant-Management-System.git.
+This project is the refactored of the "Restaurant Management System" that was cloned from https://github.com/nkeyan11/Restaurant-Management-System.git.
 
 The following introduction quoted from the original repository: https://github.com/nkeyan11/Restaurant-Management-System.git
 Desktop app for “Restaurant Management System” using python Tkinter module. Project involves the dynamic ability to switch between tables for orders, with separate file writes for kitchen orders and final bill for the customers for the respective table orders. Database integration into local Mysql DB for storing the bill data for each order.
