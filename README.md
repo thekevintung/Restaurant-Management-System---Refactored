@@ -7,16 +7,16 @@ Desktop app for “Restaurant Management System” using python Tkinter module. 
 This project need to install MySQL and have a "restaurant" databse and a "staff" table that include [staffID, staffName, password] columns header. 
 
 Following is the structure of the repository after refactored. You can run the main.py to let the "Restaurant Management System" working.
-+Records     
-+user_interface
-|   +form
+Records     
+user_interface
+|   form
 |   |   base.py
 |   |   login_page.py
 |   |   menu_page.py
 |   |   order_page.py         
-|   +---media
+|   media
 |   |   tableselect.jpg         
-+utils
+utils
 |   base.py
 |   mySQL.py
 |   record.py  
